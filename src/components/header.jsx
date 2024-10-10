@@ -1,0 +1,31 @@
+import { styles } from "../util/style";
+import Button from "./button";
+import Carousel from "./carousel";
+
+const Header = () => {
+  return (
+    <div
+      className={` ${styles.DisplayBetween} ${styles.PaddingX} flex flex-wrap w-full `}
+    id="home">
+      <div className="w-full lg:w-1/2">
+        <h1 className="text-[40px] font-bold sm:text-[60px] sm:pt-[300px] leading-[70px] text-[#145464]">
+          Bionyx.corp <br /> Sog'lig'inggiz ishonchli qo'llarda.
+        </h1>
+        <p className="mt-10 max-w-[540px] text-[12px]  sm:text-[20px] font-[400] text-[#145464]">
+          BIONYX.corp’ga xush kelibsiz! Bizning asosiy maqsadimiz fan va
+          innovatsiyalarni birlashtirib, insonlarning salomatligini yaxshilashga
+          hissa qo'shishdir. BIONYX.corp zamonaviy farmatsevtika yechimlarini
+          yaratish maqsadida tashkil etilgan bo'lib, biz dori vositalarini
+          ishlab chiqarish va tarqatishda eng ilg‘or texnologiyalardan
+          foydalanamiz.
+        </p>
+        <a href="https://t.me/+998954502282"><Button styles={"mt-20 mb-[95px]"} /></a>
+      </div>
+      <div className="w-full lg:w-1/2 h-full">
+        <Carousel />
+      </div>
+    </div>
+  );
+};
+
+export default Header;

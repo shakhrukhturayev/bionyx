@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://unpkg.com/@material-tailwind/react@latest/dist/tailwind.css");
+
+  html {
+    @apply scroll-smooth;
+    animation-duration: 500ms;
+  }
+
+
+.card-shadow {
+  -webkit-box-shadow: 0px 10px 39px 10px rgba(62, 66, 66, 0.22);
+  -moz-box-shadow: 0px 10px 39px 10px rgba(62, 66, 66, 0.22);
+  box-shadow: 0px 10px 39px 10px rgba(62, 66, 66, 0.22);
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.bg-gradient {
+  background: rgb(140, 228, 4);
+  background: linear-gradient(90deg, rgba(140, 228, 4, 1) 0%, rgba(81, 157, 51, 0.5326505602240896) 25%, rgba(20, 84, 100, 0.8239670868347339) 55%, rgba(36, 172, 212, 0.7455357142857143) 88%);
+}
+
+
+/*  card fade in and out section */
+
+.fade-in {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  transform: scale(1);
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* slider  */
+.slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slider-track{
+  display: flex;
+  width: calc(250px*12);
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px*6));
+  }
+}
+
+.slide{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+img{
+  width: 100%;
+}
+
+/* Shadows section */
+.slider::after,
+.slider::before{
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,
+  rgba(255,255,255,0)100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.footer{
+  background: rgb(140,228,4);
+background: linear-gradient(90deg, rgba(140,228,4,1) 0%, rgba(81,157,51,0.35898109243697474) 0%, rgba(20,96,100,0.6446953781512605) 16%, rgba(36,172,212,0.6250875350140056) 100%);
+}

@@ -6,10 +6,10 @@ import { NavLinks } from "../util/constants";
 const Footer = () => {
   return (
     <div
-      className={`${styles.container} ${styles.PaddingX} ${styles.DisplayStart} bg-lightBlue text-white min-w-[65%]  flex-wrap py-[130px] relative`}
+      className={`${styles.container} ${styles.PaddingX} ${styles.DisplayStart} bg-lightBlue text-white min-w-[65%]  flex-wrap py-[120px] relative`}
     >
       <div className="mr-[180px]">
-        <h1 className="font-bold text-2xl block mb-4 px-5"> Manzil</h1>
+        <h1 className="font-bold text-2xl block mb-4 px-5 sm:mt-5 mt-0"> Manzil</h1>
         <p className="flex  leading-10 max-w-[500px]">
           <span className="py-3 px-5">
             <FaLocationDot />
@@ -61,9 +61,9 @@ const Footer = () => {
         ></iframe>
       </div>
 
-      <div className={`${styles.container} ${styles.PaddingX} ${styles.DisplayBetween} absolute left-0 bottom-0 py-8 footer`} >
+      <div className={`${styles.container} ${styles.PaddingX} ${styles.DisplayBetween} absolute left-0 bottom-0 py-8 footer mt-3`} >
 
-        <p className="text-[14px]">© Bionyx.corp All Right Reserved. <br /> Developed by <span  className="underline">Pharmed Union.coltd</span> </p>
+        <p className="text-[12px]">© Bionyx.corp All Right Reserved. <br /> Developed by <span  className="underline">Pharmed Union.coltd</span> </p>
       
         </div>
     </div>

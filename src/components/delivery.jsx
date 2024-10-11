@@ -17,7 +17,7 @@ const Delivery = () => {
           Mahsulotlar o'z egalariga ishonchli tarzda yetkazib beriladi!
         </p>
 
-        <a href="https://t.me/+998954502282"><Button styles={"mt-20 mb-[95px]"} /></a>
+        <a href="https://arzonapteka.uz/ru/search?medicine=79800&region=22397&view=list&filter=all"><Button styles={"mt-20 mb-[95px]"} /></a>
       </div>
      
       

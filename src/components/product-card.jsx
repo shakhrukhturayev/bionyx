@@ -65,6 +65,7 @@ const ProductCard = ({ id, name, image, idx, title, text }) => {
               />
             </svg>
           </button>
+          
         </div>
       </div>
 

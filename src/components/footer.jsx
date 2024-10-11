@@ -9,26 +9,26 @@ const Footer = () => {
       className={`${styles.container} ${styles.PaddingX} ${styles.DisplayStart} bg-lightBlue text-white min-w-[65%]  flex-wrap py-[120px] relative`}
     >
       <div className="mr-[180px]">
-        <h1 className="font-bold text-2xl block mb-4 px-5 sm:mt-5 mt-0"> Manzil</h1>
+        <h1 className="font-bold text-2xl block mb-4 px-5 sm:mt-5 mt-0 sm:text-start text-center sm:mr-0 "> Manzil</h1>
         <p className="flex  leading-10 max-w-[500px]">
-          <span className="py-3 px-5">
+          <span className="py-3 px-5 sm:ml-0 ml-5">
             <FaLocationDot />
           </span>{" "}
-          Toshkent shahar, Charog'on MFY, Do'stlik-2, 22B-20 uy
+          Toshkent sh. Chilonzor t. Zargarlik k. Qizil sharq 32.
         </p>
         <p className="flex  leading-10 max-w-[500px]">
-          <span className="py-3 px-5">
+          <span className="py-3 px-5 sm:ml-0 ml-5">
             <FaPhone />
           </span>{" "}
           +998 95 450 22 82{" "}
         </p>
         <p className="flex  leading-10 max-w-[500px]">
-          <span className="py-3 px-5">
+          <span className="py-3 px-5 sm:ml-0 ml-5">
             <FaRegMessage />
           </span>{" "}
           bionyxcorp@gmail.com
         </p>
-        <div className="icons flex items-center px-5">
+        <div className="icons flex items-center px-5 sm:ml-0 ml-5">
       <a href="https://t.me/+998954502282" className="text-[28px] mr-2"><FaTelegram /></a>
       <a href="https://www.instagram.com/p/C9fPCGpMiE1/?igsh=amU2Nmk2NHFrdXd2" className="text-[28px] mr-2"><FaInstagram/></a>
       <a href="https://www.youtube.com/@pharmedunion" className="text-[28px]"><FaYoutube/></a>

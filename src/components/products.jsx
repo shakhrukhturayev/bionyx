@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <div>
       <h1
-        className={`${styles.container} ${styles.PaddingX}  ${styles.DisplayStart}  font-bold sm:text-[50px] text-[40px] text-darkGreen mt-10 text-center `}
+        className={`${styles.container} ${styles.PaddingX}  ${styles.DisplayStart}  font-bold sm:text-[50px] text-[43px] text-darkGreen mt-10 text-center `}
       >
         Bizning maxsulotlar
       </h1>

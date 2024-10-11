@@ -8,10 +8,10 @@ const Header = () => {
       className={` ${styles.DisplayBetween} ${styles.PaddingX} flex flex-wrap w-full `}
     id="home">
       <div className="w-full lg:w-1/2">
-        <h1 className="text-[40px] font-bold sm:text-[60px] sm:pt-[250px] leading-[70px] text-[#145464]">
+        <h1 className="text-[40px] font-bold sm:text-[60px] sm:pt-[250px] sm:leading-[70px] leading-[45px] text-[#145464]">
           Bionyx.corp <br /> Sog'lig'inggiz ishonchli qo'llarda.
         </h1>
-        <p className="mt-10 max-w-[540px] text-[12px]  sm:text-[20px] font-[400] text-[#145464]">
+        <p className="mt-10 max-w-[540px] text-[16px]  sm:text-[20px] font-[400] text-[#145464]">
           BIONYX.corp’ga xush kelibsiz! Bizning asosiy maqsadimiz fan va
           innovatsiyalarni birlashtirib, insonlarning salomatligini yaxshilashga
           hissa qo'shishdir. BIONYX.corp zamonaviy farmatsevtika yechimlarini

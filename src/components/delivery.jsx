@@ -9,7 +9,7 @@ const Delivery = () => {
     >
       <div className="flex-1 max-w-[800px]">
         <h1 className="text-[40px] font-bold sm:text-[60px] pt-2 sm:leading-[70px] leading-[40px] text-[#145464]">
-          Dorilarimizni  <span className="text-[#f63f46]">Arzon</span> <span className="text-[#149f4f]"> Apteka</span> dasturidan yoki Shahar dorixonalaridan topishinggiz mumkin!
+          Dorilarimizni  <a href="https://arzonapteka.uz/ru/search?medicine=79800&region=22397&view=list&filter=all" className="hover:underline duration-500 ease-in-out"><span className="text-[#f63f46]">Arzon</span> <span className="text-[#149f4f]"> Apteka</span></a> dasturidan yoki Shahar dorixonalaridan topishinggiz mumkin!
         </h1>
         <p className="text-2xl pt-10 text-darkGreen sm:leading-[50px] pb-10">
           1-3 ish kunida mahsulotlar o'z egasiga yetkazilishi kafolatlanadi.

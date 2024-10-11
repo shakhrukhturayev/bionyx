@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div
       className={` ${styles.DisplayBetween} ${styles.PaddingX} flex flex-wrap w-full `}
-    id="home">
+    >
       <div className="w-full lg:w-1/2">
         <h1 className="text-[40px] font-bold sm:text-[60px] sm:pt-[250px] sm:leading-[70px] leading-[45px] text-[#145464]">
           Bionyx.corp <br /> Sog'lig'inggiz ishonchli qo'llarda.

@@ -44,7 +44,7 @@ const About = () => {
         <div className="relative">
           <div className="absolute left-0 bottom-0 gradient-text boss">
             <p className="text-white p-5 text-center">
-             2023-yil 4-aprel Hindistonning 3 yirik kompaniyasidan biri <a href="https://www.indiamart.com/rhydburg-pharmaceuticals-limited/aboutus.html" className="underline hover:text-lightGreen duration-500 ease-in-out">Rhydburg Pharmacetuticals Ltd.</a>  direktori Mr.Prateek bilan kelishuv.
+             2023-yil 4-aprel Hindistonning 3 yirik kompaniyasidan biri <a href="https://www.indiamart.com/rhydburg-pharmaceuticals-limited/aboutus.html" className="underline hover:text-lightGreen duration-500 ease-in-out">Rhydburg Pharmaceuticals Ltd.</a>  direktori Mr.Prateek bilan kelishuv.
             </p>
           </div>
           <img

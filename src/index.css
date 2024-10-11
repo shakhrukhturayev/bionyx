@@ -139,3 +139,13 @@ img{
   background: rgb(140,228,4);
 background: linear-gradient(90deg, rgba(140,228,4,1) 0%, rgba(81,157,51,0.35898109243697474) 0%, rgba(20,96,100,0.6446953781512605) 16%, rgba(36,172,212,0.6250875350140056) 100%);
 }
+
+.gradient-text{
+  background: rgb(140,228,4);
+  background: linear-gradient(90deg, rgba(140,228,4,1) 0%, rgba(81,157,51,0.35898109243697474) 0%, rgba(20,96,100,0.6446953781512605) 16%, rgba(36,172,212,0.6250875350140056) 100%);
+}
+.boss{
+  -webkit-box-shadow: -2px -10px 80px -1px rgba(40,41,37,1);
+-moz-box-shadow: -2px -10px 80px -1px rgba(40,41,37,1);
+box-shadow: -2px -10px 80px -1px rgba(40,41,37,1);
+}

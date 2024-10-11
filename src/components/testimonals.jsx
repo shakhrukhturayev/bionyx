@@ -6,7 +6,7 @@ const Testimonals = () => {
     <div id="advice" className={`${styles.container} `}>
     <section className="bg-white dark:bg-lightBlue">        
       <div className="mx-auto max-w-screen-sm">
-          <h2 className="mb-4 py-10 w-full uppercase text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white flex justify-center items-center">Mutaxasislardan maslahatlar</h2>
+          <h2 className="mb-4 py-10 w-full uppercase text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white flex justify-center  text-center items-center">Mutaxasislardan maslahatlar</h2>
           
       </div> 
       <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">

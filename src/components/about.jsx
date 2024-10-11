@@ -10,8 +10,8 @@ const About = () => {
           <h1 className="text-[40px] font-bold sm:text-[60px] pt-2 sm:leading-[70px] leading-[40px] text-[#145464] mb-20">
             Biz haqimizda qisqacha.
           </h1>
-          <p className="max-w-[90%] text-[18px] sm:leading-[30px] leading-[20px] font-[500] text-darkGreen">
-            {/* max-w o'lchamini oshirib ko'ring */}
+          <p className="max-w-[90%] sm:text-[18px] text-[16px] sm:leading-[30px] leading-[20px] font-[500] text-darkGreen sm:mb-0 mb-5">
+            {/* first part text */}
             Biz kimmiz? <br /> BIONYX.corp sifat, halollik va insonparvarlik
             prinsiplari asosida faoliyat yuritadi. Bizning jamoamiz tajribali
             olimlar, tadqiqotchilar va sog'liqni saqlash mutaxassislaridan
@@ -41,14 +41,21 @@ const About = () => {
             qilinadigan materiallardan foydalanishga intilamiz.
           </p>
         </div>
-        <img
-          src={boss}
-          alt="boss"
-          className="max-w-[550px] flex-1 card-shadow"
-        />{" "}
-        {/* imgga ham flex-1 qo'shib ko'ring */}
+        <div className="relative">
+          <div className="absolute left-0 bottom-0 gradient-text boss">
+            <p className="text-white p-5 text-center">
+             2023-yil 4-aprel Hindistonning 3 yirik kompaniyasidan biri <a href="https://www.indiamart.com/rhydburg-pharmaceuticals-limited/aboutus.html" className="underline hover:text-lightGreen duration-500 ease-in-out">Rydburg company</a>  direktori Mr.Prateek bilan kelishuv.
+            </p>
+          </div>
+          <img
+            src={boss}
+            alt="boss"
+            className="max-w-[550px] flex-1 card-shadow"
+          />
+        </div>
+        {/* second part text*/}
       </div>
-      <p className="py-10 text-[18px] sm:leading-[30px] leading-[20px] font-[500] text-darkGreen">
+      <p className="py-10 sm:text-[18px] text-[16px] sm:leading-[30px] leading-[20px] font-[500] text-darkGreen">
         BIONYX.corp turli terapevtik yo‘nalishlarga, jumladan, kardiologiya,
         onkologiya, nevrologiya va yuqumli kasalliklar bo‘yicha dori
         vositalarini ishlab chiqarishga ixtisoslashgan. Bizning portfelimizda

@@ -63,7 +63,7 @@ const Footer = () => {
 
       <div className={`${styles.container} ${styles.PaddingX} ${styles.DisplayBetween} absolute left-0 bottom-0 py-8 footer`} >
 
-        <p className="text-[14px]">© Bionyx.corp All Right Reserved. <br /> Developed by Pharmed Union.coltd </p>
+        <p className="text-[14px]">© Bionyx.corp All Right Reserved. <br /> Developed by <span  className="underline">Pharmed Union.coltd</span> </p>
       
         </div>
     </div>

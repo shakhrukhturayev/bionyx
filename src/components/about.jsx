@@ -7,14 +7,14 @@ const About = () => {
     <div id="about" className={`${styles.container} ${styles.PaddingX}`}>
       <div className={`${styles.DisplayBetween} flex-1 flex-wrap`}>
         <div className="flex-1">
-          <h1 className="text-[40px] font-bold sm:text-[60px] pt-2 sm:leading-[70px] leading-[40px] text-[#145464] mb-20">
+          <h1 className="text-[40px] font-bold sm:text-[60px] pt-2 sm:leading-[70px] leading-[40px] text-[#145464] sm:mb-20 mb-6">
             Biz haqimizda qisqacha.
           </h1>
           <p className="max-w-[90%] sm:text-[18px] text-[16px] sm:leading-[30px] leading-[20px] font-[500] text-darkGreen sm:mb-0 mb-5">
             {/* first part text */}
             Biz kimmiz? <br /> BIONYX.corp sifat, halollik va insonparvarlik
             prinsiplari asosida faoliyat yuritadi. Bizning jamoamiz tajribali
-            olimlar, tadqiqotchilar va sog'liqni saqlash mutaxassislaridan
+            mutaxasislar, tadqiqotchilar va sog'liqni saqlash mutaxassislaridan
             tashkil topgan bo‘lib, ularning barchasi samarali dori vositalarini
             yaratishga bag'ishlangan. Biz har doim bemorlarning ehtiyojlarini
             birinchi o‘ringa qo‘yib, xavfsizlik, sifat va samaradorlikning eng

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ProductCardItems } from "../util/constants";
 import { Close } from "../assets";
 
-const ProductCard = ({ id, name, image, idx, title, text }) => {
+const ProductCard = ({ id, name, image, idx, title, text,link }) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Modal holati
   const [isFadingOut, setIsFadingOut] = useState(false); // Fade out holati
 
@@ -28,7 +28,7 @@ const ProductCard = ({ id, name, image, idx, title, text }) => {
   return (
     <>
       <div className="w-[320px] h-[30%] m-8 card-shadow hover:scale-110 duration-700 ease-in-out">
-        <a href={`#${name}`}>
+        <a href={`${link}`}>
           <img
             className="rounded-t-lg object-contain bg-[#f0f0f0] h-[320px] w-full"
             src={image}

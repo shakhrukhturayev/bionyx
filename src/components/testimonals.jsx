@@ -21,7 +21,7 @@ const Testimonals = () => {
                   <img className="w-12 h-12 rounded-full" src="https://cdn-icons-png.flaticon.com/512/843/843293.png" alt="profile picture"/>
                   <div className="space-y-0.5 font-medium dark:text-darkGreen text-left">
                       <div>Lazizbek Fayzullayev</div>
-                      <div className="text-sm font-light text-gray-500 dark:text-gray-400">Deriktor & CEO</div>
+                      <div className="text-sm font-light text-gray-500 dark:text-gray-400">Deriktor & CEO </div>
                   </div>
               </figcaption>    
           </figure>
@@ -47,7 +47,7 @@ const Testimonals = () => {
                   <p className="my-4">Ta'siri dastlabki kunlardan bilina boshlandi. Hozirda uyqularim normal va Ruhan xotirjamman"</p>
               </blockquote>
               <figcaption className="flex justify-center items-center space-x-3">
-                  <img className="w-12 h-12 rounded-full" src="https://cdn-icons-png.flaticon.com/512/843/843293.png" alt="profile picture"/>
+                  <img className="w-12 h-12 rounded-full" src="https://img.freepik.com/premium-vector/portrait-beautiful-doctor-woman-avatar-social-media-bright-vector-illustration_590570-4.jpg" alt="profile picture"/>
                   <div className="space-y-0.5 font-medium dark:text-darkGreen text-left">
                       <div>To'rayeva Guzal</div>
                       <div className="text-sm font-light text-gray-500 dark:text-gray-400">HR va Kadrlar buyicha mutaxasis</div>

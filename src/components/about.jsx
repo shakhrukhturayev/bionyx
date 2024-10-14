@@ -12,28 +12,28 @@ const About = () => {
           </h1>
           <p className="max-w-[90%] sm:text-[18px] text-[16px] sm:leading-[30px] leading-[20px] font-[500] text-darkGreen sm:mb-0 mb-5">
             {/* first part text */}
-            Biz kimmiz? <br /> BIONYX.corp sifat, halollik va insonparvarlik
+            Biz kimmiz? <br />  <span className="font-extrabold">BIONYX.corp</span> sifat, halollik va insonparvarlik
             prinsiplari asosida faoliyat yuritadi. Bizning jamoamiz tajribali
             mutaxasislar, tadqiqotchilar va sog'liqni saqlash mutaxassislaridan
             tashkil topgan bo‘lib, ularning barchasi samarali dori vositalarini
-            yaratishga bag'ishlangan. Biz har doim bemorlarning ehtiyojlarini
+            yaratishga bag'ishlangan. <br /> Biz har doim bemorlarning ehtiyojlarini
             birinchi o‘ringa qo‘yib, xavfsizlik, sifat va samaradorlikning eng
             yuqori standartlariga mos keladigan dori vositalarini ishlab
-            chiqamiz. Zamonaviy texnologiyalardan foydalanib, qat'iy sifat
+            chiqamiz. <br /> Zamonaviy texnologiyalardan foydalanib, qat'iy sifat
             nazorati bilan birga, mahsulotlarimizni belgilangan davolash
             natijalariga erishishiga ishonch hosil qilamiz. Kompaniyamizning
             vazifasi keng turdagi kasalliklarni davolash uchun sifatli va arzon
-            dori vositalarini ishlab chiqarishdir. Biz innovatsion tadqiqotlar
+            dori vositalarini ishlab chiqarishdir. <br /> Biz innovatsion tadqiqotlar
             va ishlab chiqarish texnologiyalari orqali global sog‘liqni saqlash
-            natijalarini yaxshilashga intilamiz.BIONYX.corp’ning ishlab
+            natijalarini yaxshilashga intilamiz. <br /> <span className="font-bold">BIONYX.corp</span>ning ishlab
             chiqarish jarayoni ilmiy-tadqiqot va rivojlantirish (R&D) bo‘limimiz
-            tomonidan boshqariladi. Biz yangi molekulalar, innovatsion dori
+            tomonidan boshqariladi. <br /> Biz yangi molekulalar, innovatsion dori
             formulalari va ilg'or ishlab chiqarish usullarini kashf qilishga
-            katta mablag' sarflaymiz. Bizning ilmiy-tadqiqot jamoamiz xalqaro
+            katta mablag' sarflaymiz. <br /> Bizning ilmiy-tadqiqot jamoamiz xalqaro
             me’yorlar va tartibotlar bilan chambarchas ishlaydi va soha
-            tendentsiyalaridan oldinda bo‘lishga intiladi.Sog‘lom dunyoga hissa
-            qo‘shish maqsadida BIONYX.corp barqarorlikni faoliyatining barcha
-            jabhalarida ustuvor yo‘nalish sifatida qabul qiladi. Biz tabiiy
+            tendentsiyalaridan oldinda bo‘lishga intiladi. <br /> Sog‘lom dunyoga hissa
+            qo‘shish maqsadida  <span className="font-extrabold">BIONYX.corp</span> barqarorlikni faoliyatining barcha
+            jabhalarida ustuvor yo‘nalish sifatida qabul qiladi. <br /> Biz tabiiy
             resurslardan oqilona foydalanish va ekologik toza ishlab chiqarish
             jarayonlarini qo‘llab, atrof-muhitga bo‘lgan ta’sirimizni
             kamaytirishga e’tibor qaratamiz. Bu jarayonda chiqindilarni
@@ -44,7 +44,7 @@ const About = () => {
         <div className="relative">
           <div className="absolute left-0 bottom-0 gradient-text boss">
             <p className="text-white p-5 text-center">
-             2023-yil 4-aprel Hindistonning 3 yirik kompaniyasidan biri <a href="https://www.indiamart.com/rhydburg-pharmaceuticals-limited/aboutus.html" className="underline hover:text-lightGreen duration-500 ease-in-out">Rhydburg Pharmaceuticals Ltd.</a>  direktori Mr.Prateek bilan kelishuv.
+             2023-yil 4-aprel Hindistonning 3 yirik kompaniyasidan biri <a href="https://www.indiamart.com/rhydburg-pharmaceuticals-limited/aboutus.html" className="underline text-lightGreen  hover:text-white duration-500 ease-in-out">Rhydburg Pharmaceuticals Ltd.</a>  direktori Mr.Prateek bilan kelishuv.
             </p>
           </div>
           <img
@@ -56,19 +56,19 @@ const About = () => {
         {/* second part text*/}
       </div>
       <p className="py-10 sm:text-[18px] text-[16px] sm:leading-[30px] leading-[20px] font-[500] text-darkGreen">
-        BIONYX.corp turli terapevtik yo‘nalishlarga, jumladan, kardiologiya,
+        <span className="font-extrabold">BIONYX.corp</span> turli terapevtik yo‘nalishlarga, jumladan, kardiologiya,
         onkologiya, nevrologiya va yuqumli kasalliklar bo‘yicha dori
-        vositalarini ishlab chiqarishga ixtisoslashgan. Bizning portfelimizda
+        vositalarini ishlab chiqarishga ixtisoslashgan. <br /> Bizning portfelimizda
         retsept bo‘yicha va retseptsiz beriladigan dori vositalari, shuningdek,
-        maxsus tibbiy holatlar uchun mo'ljallangan preparatlar mavjud.
+        maxsus tibbiy holatlar uchun mo'ljallangan preparatlar mavjud. <br />
         Shuningdek, biz sog‘liqni saqlash muassasalari va tadqiqot tashkilotlari
-        uchun moslashtirilgan farmatsevtik yechimlarni ham taqdim etamiz.
-        BIONYX.corp oddiy farmatsevtika kompaniyasi emas; biz global sog'liqni
-        saqlashni yaxshilash uchun innovatsiyaga asoslangan jamoamiz. Bizning
-        asosiy qadriyatlarimiz sifat, innovatsiya va insonparvarlikdir.
+        uchun moslashtirilgan farmatsevtik yechimlarni ham taqdim etamiz. <br />
+         <span className="font-extrabold">BIONYX.corp</span> oddiy farmatsevtika kompaniyasi emas; biz global sog'liqni
+        saqlashni yaxshilash uchun innovatsiyaga asoslangan jamoamiz. <br /> Bizning
+        asosiy qadriyatlarimiz sifat, innovatsiya va insonparvarlikdir. <br />
         Kelgusida, biz tadqiqot faoliyatimizni shaxsiylashtirilgan tibbiyot,
         biotexnologiya va raqamli salomatlik yechimlari kabi yangi
-        yo‘nalishlarga kengaytirishga tayyormiz. Biz birgalikda sog'liqni
+        yo‘nalishlarga kengaytirishga tayyormiz. <br /> Biz birgalikda sog'liqni
         saqlashning kelajagini shakllantiryapmiz – har bir yangi yutuq bilan.
       </p>
     </div>

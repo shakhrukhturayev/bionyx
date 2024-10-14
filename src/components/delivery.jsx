@@ -12,7 +12,7 @@ const Delivery = () => {
           Dorilarimizni  <a href="https://arzonapteka.uz/ru/search?medicine=79800&region=22397&view=list&filter=all" className="hover:underline duration-500 ease-in-out"><span className="text-[#f63f46]">Arzon</span> <span className="text-[#149f4f]"> Apteka</span></a> dasturidan yoki Shahar dorixonalaridan topishinggiz mumkin!
         </h1>
         <p className="text-2xl pt-10 text-darkGreen sm:leading-[50px] pb-10">
-          1-3 ish kunida mahsulotlar o'z egasiga yetkazilishi kafolatlanadi.
+           1-3 ish kunida mahsulotlar o'z egasiga yetkazilishi kafolatlanadi.
           <br />
           Mahsulotlar o'z egalariga ishonchli tarzda yetkazib beriladi!
         </p>

@@ -27,7 +27,7 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
 
   return (
     <>
-      <div className="w-[320px] h-[30%] m-8 card-shadow hover:scale-110 duration-700 ease-in-out">
+      <div className="w-[320px] h-[30%] m-8 card-shadow hover:scale-110 duration-700 ease-in-out box-radius">
         <a href={`${link}`}>
           <img
             className="rounded-t-lg object-contain bg-[#f0f0f0] h-[320px] w-full"
@@ -101,8 +101,7 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
                 className="max-w-sm max-h-[30%]"
                 alt={name}
               />
-              <p className="text-[16px] sm:text-[18px] text-darkGreen mt-5 leading-[30px]">
-                {text}
+              <p className="text-[16px] sm:text-[18px] text-darkGreen mt-5 leading-[30px]" dangerouslySetInnerHTML={{ __html: text}}>
               </p>
               <p>
                 Ko'proq ma'lumotlar dori qadog'idagi yo'riqnomada batafsil

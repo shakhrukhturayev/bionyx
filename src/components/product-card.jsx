@@ -31,7 +31,7 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
       <div className="w-[320px] h-[30%] m-8 card-shadow hover:scale-110 duration-700 ease-in-out box-radius">
         <h1>
           <img
-            className="rounded-t-lg object-fill bg-[#fff] h-[320px] w-full "
+            className="rounded-t-lg object-cover bg-[#fff] h-auto w-full "
             src={image}
             alt={name}
           />
@@ -67,7 +67,7 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
            />
          </svg>
        </button>
-       <a href={`${link}`}><MdAddShoppingCart className="text-[25px] text-darkGreen hover:text-lightGreen duration-500 ease-in-out" /></a>
+       <a href={`${link}`} className="border border-darkGreen hover:border-lightGreen duration-500 ease-in-out rounded-[8px] p-1"><MdAddShoppingCart className="text-[25px] text-darkGreen hover:text-lightGreen duration-500 ease-in-out" /></a>
          </div>
           
         </div>

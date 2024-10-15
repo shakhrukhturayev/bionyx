@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ProductCardItems } from "../util/constants";
 import { Close } from "../assets";
+import { MdAddShoppingCart } from "react-icons/md";
 
 const ProductCard = ({ id, name, image, idx, title, text,link }) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Modal holati
@@ -28,43 +29,46 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
   return (
     <>
       <div className="w-[320px] h-[30%] m-8 card-shadow hover:scale-110 duration-700 ease-in-out box-radius">
-        <a href={`${link}`}>
+        <h1>
           <img
             className="rounded-t-lg object-contain bg-[#f0f0f0] h-[320px] w-full"
             src={image}
             alt={name}
           />
-        </a>
-        <div className="p-5">
-          <a href="#">
+        </h1>
+        <div className="p-5 ">
+          <h1>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-darkGreen">
               {name}
             </h5>
-          </a>
+          </h1>
           <p className="mb-3 font-[500] text-gray-900 dark:text-darkGreen">
             {title}
           </p>
-          <button
-            onClick={openModal} // Tugmani bosganingizda modal ochiladi
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-lightBlue dark:hover:bg-lightBlue dark:focus:bg-lightGreen duration-1000 ease-in-out"
-          >
-            Ko'proq ma'lumot
-            <svg
-              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </button>
+         <div className="flex items-center justify-between">
+         <button
+         onClick={openModal} // Tugmani bosganingizda modal ochiladi
+         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-darkGreen hover:text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-lightBlue dark:focus:bg-lightGreen duration-1000 ease-in-out"
+       >
+         Ko'proq ma'lumot
+         <svg
+           className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+           aria-hidden="true"
+           xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewBox="0 0 14 10"
+         >
+           <path
+             stroke="currentColor"
+             strokeLinecap="round"
+             strokeLinejoin="round"
+             strokeWidth="2"
+             d="M1 5h12m0 0L9 1m4 4L9 9"
+           />
+         </svg>
+       </button>
+       <a href={`${link}`}><MdAddShoppingCart className="text-[25px] text-darkGreen hover:text-lightGreen duration-500 ease-in-out" /></a>
+         </div>
           
         </div>
       </div>
@@ -103,7 +107,7 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
               />
               <p className="text-[16px] sm:text-[18px] text-darkGreen mt-5 leading-[30px]" dangerouslySetInnerHTML={{ __html: text}}>
               </p>
-              <p>
+              <p className="text-lightBlue">
                 Ko'proq ma'lumotlar dori qadog'idagi yo'riqnomada batafsil
                 yoritib berilgan!...
               </p>

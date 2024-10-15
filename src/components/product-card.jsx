@@ -31,7 +31,7 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
       <div className="w-[320px] h-[30%] m-8 card-shadow hover:scale-110 duration-700 ease-in-out box-radius">
         <h1>
           <img
-            className="rounded-t-lg object-contain bg-[#f0f0f0] h-[320px] w-full"
+            className="rounded-t-lg object-fill bg-[#fff] h-[320px] w-full "
             src={image}
             alt={name}
           />
@@ -48,7 +48,7 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
          <div className="flex items-center justify-between">
          <button
          onClick={openModal} // Tugmani bosganingizda modal ochiladi
-         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-darkGreen hover:text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-lightBlue dark:focus:bg-lightGreen duration-1000 ease-in-out"
+         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-darkGreen hover:text-white  rounded-lg  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-lightBlue dark:focus:bg-lightGreen duration-1000 ease-in-out"
        >
          Ko'proq ma'lumot
          <svg

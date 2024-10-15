@@ -5,7 +5,7 @@ export { default as headerBg } from "./header-bg.jpg";
 export { default as gamotsin } from "./gamotsin.jpg";
 export { default as gamotsinsirop } from "./gamotsirop.png";
 export { default as gamotsinkapliya } from "./gamotkapliya.png";
-export { default as tridaza } from "./tridaza.png";
+export { default as tridaza } from "./tridaza.jpg";
 export { default as entrovit } from "./entrovit.jpg";
 export { default as entrovitkapsula } from "./entrovitkapsula.jpg";
 export { default as entrovitkids } from "./entrovitkids.jpg";

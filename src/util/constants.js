@@ -1,23 +1,5 @@
 import { entrovit, entrovitkapsula, entrovitkids, gamotsin, gamotsinkapliya, gamotsinsirop, tridaza, vetalin, vetalinkapsula } from "../assets"
 
-export const NavLinks = [
-    {
-        id: 'home',
-        title: 'Bosh sahifa'
-    },
-    {
-        id: 'product',
-        title: 'Maxsulotlar'
-    },
-    {
-        id: 'advice',
-        title: 'Maslahat'
-    },
-    {
-        id: 'about',
-        title: 'Biz haqimizda'
-    },
-]
 export const ProductCardItems = [
     {
         id: 1,

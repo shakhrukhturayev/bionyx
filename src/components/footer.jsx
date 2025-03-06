@@ -1,9 +1,11 @@
 import { FaLocationDot, FaPhone, FaRegMessage,FaTelegram, FaInstagram } from "react-icons/fa6";
 import { FaExternalLinkAlt, FaYoutube } from "react-icons/fa";
 import { styles } from "../util/style";
-import { NavLinks } from "../util/constants";
+import { NavLinks } from "../util/navbar";
 
 const Footer = () => {
+  const links = NavLinks();
+
   return (
     <div
       className={`${styles.container} ${styles.PaddingX} ${styles.DisplayStart} bg-lightBlue text-white min-w-[65%]  flex-wrap py-[120px] relative`}
@@ -38,7 +40,7 @@ const Footer = () => {
       <div className="mr-[180px] hidden sm:block">
         <h1 className="font-bold text-2xl block mb-10">Tezkor havolalar</h1>
         <ul>
-          {NavLinks.map((nav, id) => (
+          {links.map((nav, id) => (
             <li key={nav.id} className="py-[2px] flex items-center">
               <FaExternalLinkAlt />{" "}
               <a href={`#${nav.id}`} className="px-2">

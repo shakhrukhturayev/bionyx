@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { about1, about2, about3, about4, family1, gamotsin } from "../assets";
+import React, { useState, useEffect } from "react"; 
+import { about1, about2, about3, about4, family1 } from "../assets";
 
 const Carousel = () => {
   const images = [family1, about2, about1, about3, about4];
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -16,13 +15,22 @@ const Carousel = () => {
     );
   };
 
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext(); 
+    }, 5000); 
+
+    return () => clearInterval(interval); 
+  }, [currentIndex]); 
+
   return (
     <div id="controls-carousel" className="relative w-full">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {images.map((img, index) => (
           <div
             key={index}
-            className={`absolute block w-full  h-full transition-opacity duration-1000 ease-in-out ${
+            className={`absolute block w-full h-full transition-opacity duration-1000 ease-in-out ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           >

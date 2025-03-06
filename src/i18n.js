@@ -23,7 +23,7 @@ const resources = {
   ru: {
     translation: {
       welcome: "Добро пожаловать на наш сайт!",
-      home: "Домашняя страница",
+      home: "Главная страница",
       product: "Продукты",
       advice: "Совет",
       about: "О нас",

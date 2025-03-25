@@ -23,3 +23,4 @@ export {default as ssv} from './ssv.png';
 export {default as who} from './who.png';
 export {default as boss} from './boss.jpg';
 export {default as apteka} from './apteka.jpg'
+export {default as uzbflag} from './uzbflag.png'

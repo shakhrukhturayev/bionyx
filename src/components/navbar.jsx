@@ -6,6 +6,7 @@ import '../i18n'
 
 const Navbar = () => {
     const links = NavLinks()
+    const lastLink = links.at(-1);
 
     const [toggleNav, setToggleNav] = useState(false)
     const [active, setActive] = useState('home')
@@ -17,16 +18,16 @@ const Navbar = () => {
 
     return (
         <div className={`${styles.DisplayBetween} ${styles.container} py-6 w-full`}>
-
             {/* Logo  section */}
             <div className='w-[135px] h-[35px] cursor-pointer'><img src={logo} alt={logo} id='home' /></div>
             {/* Navigation  section */}
             <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
                 {links.map((nav, idx) => (
                     <li key={nav.id} className={`${idx === links.length - 1 ? 'mr-0' : 'mr-10'} 
-            ${active === nav.id ? 'text-lightBlue' : 'text-darkGreen'} cursor-pointer font-raleway font-semibold text-darkGreen hover:text-lime-500 text-[18px] transition-all duration-500`}
-                        onClick={() => activeHandler(nav.id)}>
-                        <a href={`${nav.id}`}>{nav.title}</a>
+                        ${active === nav.id ? 'text-lightBlue' : 'text-darkGreen'} cursor-pointer font-raleway font-semibold text-darkGreen hover:text-lime-500 text-[18px] transition-all duration-500`}
+                        onClick={() => activeHandler(nav.id)}
+                    >
+                        {nav.title === 'lang' ? <a href={`${nav.id}`}><img src={`${nav.flag}`}></img></a> : <a href={`${nav.id}`}>{nav.title}</a>}
                     </li>
                 ))}
             </ul>

@@ -1,9 +1,12 @@
 import { entrovit, entrovitkapsula, entrovitkids, gamotsin, gamotsinkapliya, gamotsinsirop, tridaza, vetalin, vetalinkapsula } from "../assets"
 
-export const ProductCardItems = [
+export const ProductCardItems = ()=>{
+   
+    return [
+        
     {
         id: 1,
-        name: "Gamotsin 30",
+        name: "Gamotsin B6",
         image: gamotsin,
         link:"https://arzonapteka.uz/ru/search?medicine=80884&region=22397&view=list&filter=all",
         title:"Gamotsin B6 Yangi avlod vositasi bulib, 100 dan ortiq asab tizimi buzulishlariga yordam beradi",
@@ -73,4 +76,5 @@ export const ProductCardItems = [
         title:"Enterovit kids - Ichaklar va ovqat xazm qilish a'zolar tizimi uchun yangi avlod Simbiotiki",
         text:"<b>ENTEROVIT kids</b> <br />  <b>Bitta paketcha quyidagilarni saqlaydi</b> ( probiotiklar  500mg har bir dozada) 13 mlrd tirik bakteriyalar, Lactobacillus plantarum, Lactobacillus fermentum, Lactobacillus acidophilus, Lactobacillus bulgaricus, Bifidobacterium, longum Bifidobacterium bifidum, Bifidobacterium adolescentis, Bacillus coagulans, rux laktati,  15mg sof rux,  5mg S vitamini,  60mg   natriy xloridi,  120mg  kaliy xloridi,  100mg   natriy sitrati,  180mg  glyukoza,   1007mg Yordamchi moddalari: ta’m beruvchi xushbo‘y modda (qulupnay yoki apelsin) – 120 mg; maltodekstrin – 0,8 g; quruq yaxlit sut – 0,7 g. Faol tarkibiy qismlarining xossalari:Lakto- va bifidobakteriyalar - ichak mikroflorasining fiziologik muvozanatini ushlab turadi va tiklaydi, patogen mikroorganimlarning ko‘payishi va yashashi uchun noxush sharoitlarni yaratadi, ovqatni hazm qilish va V guruhi vitaminlari, S, K vitaminlarining ishlab chiqarilishi jarayonlarida ishtirok etadi, hamda elektrolitlar muvozanatini, immunitetni boshqaradi. Temir qalsiy, D vitaminini so‘rilishi uchun yaxshi sharoitlarni yaratadi. Preparatning tarkibiga kiruvchi bakteriyalar oqsillar hazm bo'lishini yengillashtiradi."
     },
-]
+    ]
+}

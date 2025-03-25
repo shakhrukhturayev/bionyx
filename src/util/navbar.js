@@ -21,8 +21,9 @@ export const NavLinks = () => {
       title: t('about'),
     },
     {
-        id: t('langlink'),
-        title: t('lang'),
-      },
+      id: t('langlink'),
+      title: 'lang',
+      flag: t('flag')
+    },
   ];
 };

@@ -1,3 +1,4 @@
+import { Navigate } from "react-router-dom";
 import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -33,12 +34,14 @@ const LanguageWrapper = ({ children }) => {
   return children;
 };
 
+
+
 function App() {
   return (
     <Router>
       <LanguageWrapper>
         <Routes>
-          <Route path="/" /> {/* Default sahifa */}
+          <Route path="/" element={<Navigate to ="/uz"/>} /> {/* Default sahifa */}
           <Route path="/:lang" /> {/* /ru yoki /en ga moslashish */}
         </Routes>
         <div className={`${styles.container} w-full`}>

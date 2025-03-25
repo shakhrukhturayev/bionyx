@@ -1,11 +1,14 @@
 import { useState } from "react";
-import { ProductCardItems } from "../util/constants";
 import { Close } from "../assets";
 import { MdAddShoppingCart } from "react-icons/md";
+import { useTranslation } from "react-i18next";
+import '../i18n'
+import parse from 'html-react-parser';
 
 const ProductCard = ({ id, name, image, idx, title, text,link }) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Modal holati
   const [isFadingOut, setIsFadingOut] = useState(false); // Fade out holati
+  const { t } = useTranslation();
 
   const openModal = () => {
     setIsModalOpen(true); // Modalni ochish
@@ -25,8 +28,9 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
       closeModal(); // Agar modalning tashqi foniga bosilsa, modal yopiladi
     }
   };
-
+  
   return (
+    
     <>
       <div className="w-[320px] h-[30%] m-8 card-shadow hover:scale-110 duration-700 ease-in-out box-radius">
         <h1>
@@ -37,11 +41,11 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
           />
         </h1>
         <div className="p-5 ">
-          <h1>
+          <div>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-darkGreen">
               {name}
             </h5>
-          </h1>
+          </div>
           <p className="mb-3 font-[500] text-gray-900 dark:text-darkGreen">
             {title}
           </p>
@@ -50,7 +54,7 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
          onClick={openModal} // Tugmani bosganingizda modal ochiladi
          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-darkGreen hover:text-white  rounded-lg  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white dark:hover:bg-lightBlue dark:focus:bg-lightGreen duration-1000 ease-in-out"
        >
-         Ko'proq ma'lumot
+        {t('dataabout')}
          <svg
            className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
            aria-hidden="true"
@@ -105,11 +109,10 @@ const ProductCard = ({ id, name, image, idx, title, text,link }) => {
                 className="max-w-sm max-h-[30%]"
                 alt={name}
               />
-              <p className="text-[16px] sm:text-[18px] text-darkGreen mt-5 leading-[30px]" dangerouslySetInnerHTML={{ __html: text}}>
+              <p className="text-[16px] sm:text-[18px] text-darkGreen mt-5 leading-[30px]">{parse(text)}
               </p>
               <p className="text-lightBlue">
-                Ko'proq ma'lumotlar dori qadog'idagi yo'riqnomada batafsil
-                yoritib berilgan!...
+              {t('moreinfo')}
               </p>
             </div>
           </div>
